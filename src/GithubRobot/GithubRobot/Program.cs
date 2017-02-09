@@ -120,7 +120,7 @@ namespace GithubRobot
                             count++;
                         }
                     }
-                    Console.WriteLine("更新完成，插入" + count + "条数据。下一次更新在" + DateTime.Now.AddMinutes(waitmi).ToString());
+                    Console.WriteLine("更新完成，插入" + count + "条数据。下一次更新在" + DateTime.Now.AddMinutes(waitmi).ToString() + "。输入任意字符停止。");
                     Thread.Sleep(new TimeSpan(0, waitmi, 0));
                 }
                 Console.WriteLine("更新停止");
